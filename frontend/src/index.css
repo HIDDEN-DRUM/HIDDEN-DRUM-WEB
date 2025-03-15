@@ -31,6 +31,55 @@ tbody > tr:nth-child(odd) {
   background-color: #f0f0f0
 }
 
+.checkout-steps {
+  display: flex; 
+  justify-content: space-between; 
+  width: 40rem; 
+  margin: 1rem auto; 
+}
+
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid; 
+  color: #c0c0c0;
+  flex: 1 1; 
+  padding-top: 1rem;
+}
+
+.checkout-steps > div.active { 
+  border-top: 0.3rem #f08000 solid; 
+  color: #f08000
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  padding: 2rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+  list-style-type: none;
+}
+
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+input {
+  padding: 1rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -81,13 +130,14 @@ color: #ff8000;
   justify-content: center;
   align-items: center;
 }
+
 a {
   text-decoration: none;
 }
+
 a:hoover {
   color: #ff8000;
 }
-
 
   •brand button {
   font-size: 3rem;
@@ -97,6 +147,7 @@ a:hoover {
   color: #ffffff;
   cursor: pointer;
   }
+
   •sidebar {
   position: fixed;
   transform: translateX(-30rem);
@@ -104,9 +155,11 @@ a:hoover {
   background-color: #f0f0f0;
   height: 100%;
   }
+
   •sidebar.open {
   transform: translate(0);
   }
+
   •sidebar-close-button {
   border-radius: 50%;
   border: 0.1rem #000000 solid;
@@ -119,7 +172,6 @@ a:hoover {
   position: absolute;
   right: 0.5rem; top:1.5rem;
   }
-
 
   .products {
       display: flex;
