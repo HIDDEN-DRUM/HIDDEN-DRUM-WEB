@@ -4,6 +4,8 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
+import Orders from './Orders/Orders';
+import OrderDetail from "./OrderDetail/OrderDetail"; // Import missing component
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,6 +31,7 @@ function App() {
           <div className="header-links">
             <Link to="/">Home</Link>
             <Link to="/catalog">Catalog</Link>
+            <Link to="/orders">Orders</Link>
           </div>
         </header>
 
@@ -48,6 +51,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/catalog" element={<Products />} />
+              <Route path="/orders" element={<Orders />} />
+              <Route path="/order/:id" element={<OrderDetail />} />
             </Routes>
           </div>
         </main>
