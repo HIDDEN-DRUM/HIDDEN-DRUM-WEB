@@ -6,6 +6,7 @@ import Home from "./Home/Home";
 import Products from "./Products/Products";
 import Orders from './Orders/Orders';
 import OrderDetail from "./OrderDetail/OrderDetail"; // Import missing component
+import PaymentScreen from './Payment/Payment';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

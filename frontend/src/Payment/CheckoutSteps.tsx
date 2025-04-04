@@ -9,4 +9,4 @@ function CheckoutSteps(props: any) {
     </div>
 }
 
-export default CheckoytSteps; 
+export default CheckoutSteps; 
